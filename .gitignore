@@ -22,6 +22,7 @@ application/config/system/orm_uploader.php
 /temp/*
 
 /upload/*
+/_upload/*
 /vendor/*
 /assets/*
 /api/*
