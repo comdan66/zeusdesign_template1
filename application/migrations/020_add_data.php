@@ -1067,9 +1067,9 @@ class Migration_Add_data extends CI_Migration {
     $this->db->query (
       "INSERT INTO `users` (`id`, `uid`, `name`, `email`, `password`, `token`, `login_count`, `logined_at`, `updated_at`, `created_at`)
         VALUES
-          (1,'','總管理員','root@zeusdesign.com.tw','c56d0e9a7ccec67b4ea131655038d604','',4,'2016-11-22 00:00:00','2016-11-24 10:33:43','2016-11-24 10:33:43'),
-          (2,'','文章管理員','article@zeusdesign.com.tw','c56d0e9a7ccec67b4ea131655038d604','',14,'2016-11-22 00:00:00','2016-11-24 10:33:43','2016-11-24 10:33:43'),
-          (3,'','網站管理員','site@zeusdesign.com.tw','c56d0e9a7ccec67b4ea131655038d604','',29,'2016-11-22 00:00:00','2016-11-24 10:33:43','2016-11-24 10:33:43');"
+          (1,'','總管理員','root@zeusdesign.com.tw','b5a5e10ea96235eb6be6565a9b67bf10','',4,'2016-11-22 00:00:00','2016-11-24 10:33:43','2016-11-24 10:33:43'),
+          (2,'','文章管理員','article@zeusdesign.com.tw','b5a5e10ea96235eb6be6565a9b67bf10','',14,'2016-11-22 00:00:00','2016-11-24 10:33:43','2016-11-24 10:33:43'),
+          (3,'','網站管理員','site@zeusdesign.com.tw','b5a5e10ea96235eb6be6565a9b67bf10','',29,'2016-11-22 00:00:00','2016-11-24 10:33:43','2016-11-24 10:33:43');"
     );
     $this->db->query (
       "INSERT INTO `contacts` (`id`, `name`, `email`, `message`, `ip`, `is_readed`, `updated_at`, `created_at`)
