@@ -33,6 +33,8 @@ if ( ! function_exists('recurse_copy')) {
   function recurse_copy($src,$dst) { 
       $dir = opendir($src); 
       @mkdir($dst); 
+      @chmod ($dst, 0777);
+
       while(false !== ( $file = readdir($dir)) ) { 
           if (( $file != '.' ) && ( $file != '..' )) { 
               if ( is_dir($src . '/' . $file) ) { 
@@ -40,6 +42,7 @@ if ( ! function_exists('recurse_copy')) {
               } 
               else { 
                   copy($src . '/' . $file,$dst . '/' . $file); 
+                  @chmod ($dst . '/' . $file, 0777);
               } 
           } 
       } 
