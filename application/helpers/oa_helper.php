@@ -52,7 +52,7 @@ if (!function_exists ('conditions')) {
 if (!function_exists ('res_url')) {
   function res_url () {
     $args = array_filter (func_get_args ());
-    return ENVIRONMENT == 'production' ? implode ('/', $args) : base_url ($args);
+    return ENVIRONMENT == 'production' ? base_url ($args) : base_url ($args);
   }
 }
 if (!function_exists ('column_array')) {
