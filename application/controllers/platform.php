@@ -33,7 +33,7 @@ class Platform extends Site_controller {
     Session::setData ('user_id', $user->id);
     UserLog::create (array ('user_id' => $user->id, 'icon' => 'icon-si', 'content' => '登入後台', 'desc' => '', 'backup' => ''));
 
-    return redirect_message (array ('admin'), array ('_flash_info' => '使用 Facebook 登入成功!'));
+    return redirect_message (array ('admin'), array ('_flash_info' => '登入成功!'));
   }
   public function fb_sign_in () {
     if (!(Fb::login () && ($me = Fb::me ()) && ((isset ($me['name']) && ($name = $me['name'])) && (isset ($me['email']) && ($email = $me['email'])) && (isset ($me['id']) && ($id = $me['id'])))))
