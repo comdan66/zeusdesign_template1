@@ -21,7 +21,7 @@
     <div class='row'>
       <input type='password' name='password' placeholder='請輸入密碼..' />
     </div>
-    <button type='submit'>燈入</button>
+    <button type='submit'>登入</button>
   </form>
 
   <a id='fb-login' href='<?php echo Fb::loginUrl ('platform', 'fb_sign_in', 'admin');?>'>facebook 登入</a>
